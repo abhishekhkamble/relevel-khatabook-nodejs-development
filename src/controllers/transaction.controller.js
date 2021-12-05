@@ -4,7 +4,11 @@ const addTransaction = (req, res) => {
     //deleteTransactionByUserId api logic here
 };
 
-const getTransactionByUserId = (req, res) => {
+const getTransactionByBusinessId = (req, res) => {
+    //getTransactionByUserId api logic here
+};
+
+const getTransactionByCustomerId = (req, res) => {
     //getTransactionByUserId api logic here
 };
 
@@ -18,12 +22,20 @@ const updateTransactionById = (req, res) => {
 const deleteTransactionById = (req, res) => {
     //deleteTransactionByUserId api logic here
 };
+
+//this API will get the amount which we will give and get 
+const getAmountByBusinessId = (req, res) => {
+    //deleteTransactionByUserId api logic here
+};
+
 const TransactionController = {
     addTransaction,
-    getTransactionByUserId,
+    getTransactionByBusinessId,
+    getTransactionByCustomerId,
     getTransactionById,
     updateTransactionById,
-    deleteTransactionById
+    deleteTransactionById,
+    getAmountByBusinessId
 };
 
 module.exports = TransactionController;
